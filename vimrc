@@ -1,23 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/vundle/
-"call vundle#rc()
-" alternatively, pass a path where Vundle should install plugins
-"let path = '~/some/path/here'
-"call vundle#rc(path)
-
-" let Vundle manage Vundle, required
-"Plugin 'gmarik/vundle'
-"Plugin 'Rip-Rip/clang_complete'
-"Plugin 'lsdr/monokai'
-"Plugin 'kien/ctrlp.vim'
-"Plugin 'SirVer/ultisnips'
-"Plugin 'Blackrush/vim-gocode'
-"Plugin 'dag/vim2hs'
-
-
 filetype plugin indent on
 syntax on
 set backspace=indent,eol,start
@@ -89,7 +72,7 @@ set wildignore+=CMakeFiles,*.o,*.so,*swp,*.obj,.git,.svn,CMakeCache.txt,*.d,*/bo
 set autoindent
 set number
 let g:rehash256 = 1
-"colorscheme molokai
+"colorscheme monokai
 
 function! Format()
 	if &filetype == "go"
